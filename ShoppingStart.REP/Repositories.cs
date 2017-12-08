@@ -17,7 +17,10 @@ namespace ShoppingStart.REP
         {
 
         }
-        public class SuppliersRepository : BaseRepository<Suppliers>
+       
+        public class UsersRepository : BaseRepository<Users>
         {
         }
+    }
 }
+

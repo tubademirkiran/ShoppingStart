@@ -27,6 +27,6 @@ namespace ShoppingStart.DL
     
         public virtual DbSet<Categories> Categories { get; set; }
         public virtual DbSet<Products> Products { get; set; }
-        public virtual DbSet<Suppliers> Suppliers { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
     }
 }

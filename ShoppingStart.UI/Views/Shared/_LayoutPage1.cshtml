@@ -26,13 +26,44 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="/Shop/StartShop">Start Shopping</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="/Musteri/Payment">Payment</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="/Musteri/Order">Order Tracking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Admin/Admin">Web Admin</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        @if (Session["User"] != null)
+                        {
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hoşgeldiniz @Session["User"]
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/Musteri/Profilim">Profil</a>
+                                <a class="dropdown-item" href="/Login/LogOut">Log Out</a>
+
+
+                                <div class="dropdown-divider"></div>
+                            </div>
+                        }
+                        else
+                        {
+                            <a class="nav-link" href="/Login/Login">Login</a>
+                        }
                     </li>
                 </ul>
             </div>

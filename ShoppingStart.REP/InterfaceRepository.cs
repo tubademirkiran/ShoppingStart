@@ -13,6 +13,7 @@ namespace ShoppingStart.REP
         void Sil(T entity);
         void Ekle(T entity);
         T Bul(int id);
+        T Bul(string id);
         void Guncelle(T entity);
         void Save();
         List<T> Liste();

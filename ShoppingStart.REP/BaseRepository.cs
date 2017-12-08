@@ -15,6 +15,10 @@ namespace ShoppingStart.REP
         {
             return Set().Find(id);
         }
+        public T Bul(string id)
+        {
+            return Set().Find(id);
+        }
 
         public void Ekle(T entity)
         {
